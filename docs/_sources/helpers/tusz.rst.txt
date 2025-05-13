@@ -1,0 +1,9 @@
+TUSZ
+=====================================
+A class with methods to build samples from TUSZ dataset.
+
+.. automodule:: pyseizure.helpers.tusz
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

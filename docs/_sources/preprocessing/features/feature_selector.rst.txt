@@ -1,0 +1,9 @@
+Feature Selector
+=====================================
+Abstract class for feature selectors.
+
+.. automodule:: pyseizure.preprocessing.feature_selection.feature_selector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

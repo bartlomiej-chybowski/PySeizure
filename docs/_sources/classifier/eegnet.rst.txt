@@ -1,0 +1,8 @@
+EEGNet
+=====================================
+EEGNet classifier class.
+
+.. automodule:: pyseizure.classifier.eegnet
+   :members:
+   :undoc-members:
+   :show-inheritance:

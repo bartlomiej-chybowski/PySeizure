@@ -1,0 +1,9 @@
+Montage
+=====================================
+Montage enum class.
+
+.. automodule:: pyseizure.data_classes.montage
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

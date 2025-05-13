@@ -1,0 +1,9 @@
+Resampling
+=====================================
+Resampling enum class.
+
+.. automodule:: pyseizure.data_classes.resampling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

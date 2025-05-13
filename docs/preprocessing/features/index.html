@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features &mdash; PySeizure 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Feature extractor" href="feature_extractor.html" />
+    <link rel="prev" title="Preprocessing" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PySeizure
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../classifier/index.html">Classifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_classes/index.html">Data Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../helpers/index.html">Helper</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Preprocessing</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feature_extractor.html">Feature extractor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html">Temporal feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html">Frequency feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html">Correlation feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html">Graph feature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html">Feature Selector</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html">FS Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html">Boruta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="svm_rfecv.html">SVM RFECV</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../filters/index.html">Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../eeg_reader.html">EEG reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edf_reader.html">EDF reader</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PySeizure</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">Preprocessing</a></li>
+      <li class="breadcrumb-item active">Features</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/preprocessing/features/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="features">
+<h1>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h1>
+<p>Features Classes.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="feature_extractor.html">Feature extractor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="feature_extractor.html#pyseizure.preprocessing.feature_engineering.feature_extractor.FeatureExtractor"><code class="docutils literal notranslate"><span class="pre">FeatureExtractor</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feature_extractor.html#pyseizure.preprocessing.feature_engineering.feature_extractor.FeatureExtractor.calculate_features"><code class="docutils literal notranslate"><span class="pre">FeatureExtractor.calculate_features()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="temporal_feature.html">Temporal feature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature"><code class="docutils literal notranslate"><span class="pre">TemporalFeature</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.absolute_area_under_signal"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.absolute_area_under_signal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.calculate_features"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.calculate_features()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.coastline"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.coastline</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.hjorth_complexity"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.hjorth_complexity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.hjorth_mobility"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.hjorth_mobility</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.intermittency"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.intermittency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.interquartile_range"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.interquartile_range</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.kurtosis"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.kurtosis</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.max"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.max</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.mean"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.mean</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.min"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.min</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.peak_to_peak"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.peak_to_peak</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.petrosian_fractal_dimension"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.petrosian_fractal_dimension</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.skewness"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.skewness</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.spike_count"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.spike_count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.spikiness"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.spikiness</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.standard_deviation"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.standard_deviation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.total_signal_energy"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.total_signal_energy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.variance"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.variance</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.voltage_auc"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.voltage_auc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="temporal_feature.html#pyseizure.preprocessing.feature_engineering.temporal_feature.TemporalFeature.zero_crossing"><code class="docutils literal notranslate"><span class="pre">TemporalFeature.zero_crossing</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="frequency_feature.html">Frequency feature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.bands"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.bands</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.calculate_features"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.calculate_features()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.coastline"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.coastline</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.discrete_wavelet_transform"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.discrete_wavelet_transform</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.energy_percentage"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.energy_percentage</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.power_spectral_centroid"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.power_spectral_centroid</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.power_spectral_density"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.power_spectral_density</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.signal_monotony"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.signal_monotony</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_feature.html#pyseizure.preprocessing.feature_engineering.frequency_feature.FrequencyFeatures.signal_to_noise"><code class="docutils literal notranslate"><span class="pre">FrequencyFeatures.signal_to_noise</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="correlation_feature.html">Correlation feature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.calculate_features"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.calculate_features()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.coherence"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.coherence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.cross_correlation_max_coef"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.cross_correlation_max_coef</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.imaginary_coherence"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.imaginary_coherence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.phase_slope_index"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.phase_slope_index</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="correlation_feature.html#pyseizure.preprocessing.feature_engineering.correlation_feature.CorrelationFeature.scipy_coherence"><code class="docutils literal notranslate"><span class="pre">CorrelationFeature.scipy_coherence()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="graph_feature.html">Graph feature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature"><code class="docutils literal notranslate"><span class="pre">GraphFeature</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.betweenness_centrality"><code class="docutils literal notranslate"><span class="pre">GraphFeature.betweenness_centrality</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.calculate_features"><code class="docutils literal notranslate"><span class="pre">GraphFeature.calculate_features()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.characteristic_path"><code class="docutils literal notranslate"><span class="pre">GraphFeature.characteristic_path</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.clustering_coefficient"><code class="docutils literal notranslate"><span class="pre">GraphFeature.clustering_coefficient</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.diameter"><code class="docutils literal notranslate"><span class="pre">GraphFeature.diameter</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.eccentricity"><code class="docutils literal notranslate"><span class="pre">GraphFeature.eccentricity</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.global_efficiency"><code class="docutils literal notranslate"><span class="pre">GraphFeature.global_efficiency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.local_efficiency"><code class="docutils literal notranslate"><span class="pre">GraphFeature.local_efficiency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graph_feature.html#pyseizure.preprocessing.feature_engineering.graph_feature.GraphFeature.radius"><code class="docutils literal notranslate"><span class="pre">GraphFeature.radius</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="feature_selector.html">Feature Selector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="feature_selector.html#pyseizure.preprocessing.feature_selection.feature_selector.FeatureSelector"><code class="docutils literal notranslate"><span class="pre">FeatureSelector</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.preprocessing.feature_selection.feature_selector.FeatureSelector.fit"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.preprocessing.feature_selection.feature_selector.FeatureSelector.get_ranking"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.get_ranking()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.preprocessing.feature_selection.feature_selector.FeatureSelector.get_selected"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.get_selected()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.preprocessing.feature_selection.feature_selector.FeatureSelector.transform"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.transform()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fs_config.html">FS Config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig"><code class="docutils literal notranslate"><span class="pre">FSConfig</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.fit"><code class="docutils literal notranslate"><span class="pre">FSConfig.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.get_ranking"><code class="docutils literal notranslate"><span class="pre">FSConfig.get_ranking()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.get_selected"><code class="docutils literal notranslate"><span class="pre">FSConfig.get_selected()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.open"><code class="docutils literal notranslate"><span class="pre">FSConfig.open()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.reopen"><code class="docutils literal notranslate"><span class="pre">FSConfig.reopen()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="fs_config.html#pyseizure.preprocessing.feature_selection.fs_config.FSConfig.transform"><code class="docutils literal notranslate"><span class="pre">FSConfig.transform()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boruta.html">Boruta</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta"><code class="docutils literal notranslate"><span class="pre">Boruta</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.close"><code class="docutils literal notranslate"><span class="pre">Boruta.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.fit"><code class="docutils literal notranslate"><span class="pre">Boruta.fit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.get_ranking"><code class="docutils literal notranslate"><span class="pre">Boruta.get_ranking()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.get_selected"><code class="docutils literal notranslate"><span class="pre">Boruta.get_selected()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.open"><code class="docutils literal notranslate"><span class="pre">Boruta.open()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.reopen"><code class="docutils literal notranslate"><span class="pre">Boruta.reopen()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="boruta.html#pyseizure.preprocessing.feature_selection.boruta.Boruta.transform"><code class="docutils literal notranslate"><span class="pre">Boruta.transform()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="svm_rfecv.html">SVM RFECV</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="feature_extractor.html" class="btn btn-neutral float-right" title="Feature extractor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Bartlomiej Chybowski.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

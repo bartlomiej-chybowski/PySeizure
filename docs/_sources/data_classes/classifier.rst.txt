@@ -1,0 +1,9 @@
+Classifier
+=====================================
+Classifier enum class.
+
+.. automodule:: pyseizure.data_classes.classifier
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

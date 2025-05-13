@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Classes &mdash; PySeizure 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Classifier" href="classifier.html" />
+    <link rel="prev" title="Hybrid Model of Convolutional Neural Network and Transformer" href="../classifier/conv_transformer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PySeizure
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classifier/index.html">Classifiers</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Classes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classifier.html">Classifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature.html">FeatureFeature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_selector.html">Feature Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter_type.html">Filter Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frequency_band.html">Frequency band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="montage.html">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objective.html">Objective</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raw_sample.html">Raw sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resampling.html">Resampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preprocessing/index.html">Preprocessing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PySeizure</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Classes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/data_classes/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-classes">
+<h1>Data Classes<a class="headerlink" href="#data-classes" title="Link to this heading"></a></h1>
+<p>Data Classes.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classifier.html">Classifier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier"><code class="docutils literal notranslate"><span class="pre">Classifier</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.CNN"><code class="docutils literal notranslate"><span class="pre">Classifier.CNN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.CONV_LSTM"><code class="docutils literal notranslate"><span class="pre">Classifier.CONV_LSTM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.CONV_TRANSFORMER"><code class="docutils literal notranslate"><span class="pre">Classifier.CONV_TRANSFORMER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.EEGNET"><code class="docutils literal notranslate"><span class="pre">Classifier.EEGNET</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.LOGISTIC_REGRESSION"><code class="docutils literal notranslate"><span class="pre">Classifier.LOGISTIC_REGRESSION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.MLP"><code class="docutils literal notranslate"><span class="pre">Classifier.MLP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.data_classes.classifier.Classifier.XGBOOST"><code class="docutils literal notranslate"><span class="pre">Classifier.XGBOOST</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html#pyseizure.data_classes.dataset.Dataset"><code class="docutils literal notranslate"><span class="pre">Dataset</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dataset.html#pyseizure.data_classes.dataset.Dataset.CHBMIT"><code class="docutils literal notranslate"><span class="pre">Dataset.CHBMIT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset.html#pyseizure.data_classes.dataset.Dataset.GENERIC"><code class="docutils literal notranslate"><span class="pre">Dataset.GENERIC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="dataset.html#pyseizure.data_classes.dataset.Dataset.TUSZ"><code class="docutils literal notranslate"><span class="pre">Dataset.TUSZ</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="feature.html">FeatureFeature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature"><code class="docutils literal notranslate"><span class="pre">Feature</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.ABSOLUTE_AREA_UNDER_SIGNAL"><code class="docutils literal notranslate"><span class="pre">Feature.ABSOLUTE_AREA_UNDER_SIGNAL</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.BETWEENNESS_CENTRALITY"><code class="docutils literal notranslate"><span class="pre">Feature.BETWEENNESS_CENTRALITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.CHARACTERISTIC_PATH"><code class="docutils literal notranslate"><span class="pre">Feature.CHARACTERISTIC_PATH</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.CLUSTERING_COEFFICIENT"><code class="docutils literal notranslate"><span class="pre">Feature.CLUSTERING_COEFFICIENT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.COASTLINE"><code class="docutils literal notranslate"><span class="pre">Feature.COASTLINE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.COHERENCE"><code class="docutils literal notranslate"><span class="pre">Feature.COHERENCE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.CROSS_CORRELATION_MAX_COEF"><code class="docutils literal notranslate"><span class="pre">Feature.CROSS_CORRELATION_MAX_COEF</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.DIAMETER"><code class="docutils literal notranslate"><span class="pre">Feature.DIAMETER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.DISCRETE_WAVELET_TRANSFORM"><code class="docutils literal notranslate"><span class="pre">Feature.DISCRETE_WAVELET_TRANSFORM</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.ECCENTRICITY"><code class="docutils literal notranslate"><span class="pre">Feature.ECCENTRICITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.ENERGY_PERCENTAGE"><code class="docutils literal notranslate"><span class="pre">Feature.ENERGY_PERCENTAGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.GLOBAL_EFFICIENCY"><code class="docutils literal notranslate"><span class="pre">Feature.GLOBAL_EFFICIENCY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.HJORTH_COMPLEXITY"><code class="docutils literal notranslate"><span class="pre">Feature.HJORTH_COMPLEXITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.HJORTH_MOBILITY"><code class="docutils literal notranslate"><span class="pre">Feature.HJORTH_MOBILITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.IMAGINARY_COHERENCE"><code class="docutils literal notranslate"><span class="pre">Feature.IMAGINARY_COHERENCE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.INTERMITTENCY"><code class="docutils literal notranslate"><span class="pre">Feature.INTERMITTENCY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.INTERQUARTILE_RANGE"><code class="docutils literal notranslate"><span class="pre">Feature.INTERQUARTILE_RANGE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.KURTOSIS"><code class="docutils literal notranslate"><span class="pre">Feature.KURTOSIS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.LOCAL_EFFICIENCY"><code class="docutils literal notranslate"><span class="pre">Feature.LOCAL_EFFICIENCY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.MAX"><code class="docutils literal notranslate"><span class="pre">Feature.MAX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.MEAN"><code class="docutils literal notranslate"><span class="pre">Feature.MEAN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.MIN"><code class="docutils literal notranslate"><span class="pre">Feature.MIN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.PEAK_TO_PEAK"><code class="docutils literal notranslate"><span class="pre">Feature.PEAK_TO_PEAK</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.PETROSIAN_FRACTAL_DIMENSION"><code class="docutils literal notranslate"><span class="pre">Feature.PETROSIAN_FRACTAL_DIMENSION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.PHASE_SLOPE_INDEX"><code class="docutils literal notranslate"><span class="pre">Feature.PHASE_SLOPE_INDEX</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_CENTROID"><code class="docutils literal notranslate"><span class="pre">Feature.POWER_SPECTRAL_CENTROID</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_DENSITY"><code class="docutils literal notranslate"><span class="pre">Feature.POWER_SPECTRAL_DENSITY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.RADIUS"><code class="docutils literal notranslate"><span class="pre">Feature.RADIUS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.SIGNAL_MONOTONY"><code class="docutils literal notranslate"><span class="pre">Feature.SIGNAL_MONOTONY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.SIGNAL_TO_NOISE"><code class="docutils literal notranslate"><span class="pre">Feature.SIGNAL_TO_NOISE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.SKEWNESS"><code class="docutils literal notranslate"><span class="pre">Feature.SKEWNESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.SPIKE_COUNT"><code class="docutils literal notranslate"><span class="pre">Feature.SPIKE_COUNT</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.SPIKINESS"><code class="docutils literal notranslate"><span class="pre">Feature.SPIKINESS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.STANDARD_DEVIATION"><code class="docutils literal notranslate"><span class="pre">Feature.STANDARD_DEVIATION</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.TOTAL_SIGNAL_ENERGY"><code class="docutils literal notranslate"><span class="pre">Feature.TOTAL_SIGNAL_ENERGY</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.VARIANCE"><code class="docutils literal notranslate"><span class="pre">Feature.VARIANCE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.VOLTAGE_AUC"><code class="docutils literal notranslate"><span class="pre">Feature.VOLTAGE_AUC</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature.html#pyseizure.data_classes.feature.Feature.ZERO_CROSSING"><code class="docutils literal notranslate"><span class="pre">Feature.ZERO_CROSSING</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="feature_selector.html">Feature Selector</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="feature_selector.html#pyseizure.data_classes.feature_selector.FeatureSelector"><code class="docutils literal notranslate"><span class="pre">FeatureSelector</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.data_classes.feature_selector.FeatureSelector.BORUTA"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.BORUTA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="feature_selector.html#pyseizure.data_classes.feature_selector.FeatureSelector.SVMRFECV"><code class="docutils literal notranslate"><span class="pre">FeatureSelector.SVMRFECV</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="filter_type.html">Filter Type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="filter_type.html#pyseizure.data_classes.filter_type.FilterType"><code class="docutils literal notranslate"><span class="pre">FilterType</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="filter_type.html#pyseizure.data_classes.filter_type.FilterType.BANDPASS"><code class="docutils literal notranslate"><span class="pre">FilterType.BANDPASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="filter_type.html#pyseizure.data_classes.filter_type.FilterType.BANDSTOP"><code class="docutils literal notranslate"><span class="pre">FilterType.BANDSTOP</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="filter_type.html#pyseizure.data_classes.filter_type.FilterType.HIGHPASS"><code class="docutils literal notranslate"><span class="pre">FilterType.HIGHPASS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="filter_type.html#pyseizure.data_classes.filter_type.FilterType.LOWPASS"><code class="docutils literal notranslate"><span class="pre">FilterType.LOWPASS</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="frequency_band.html">Frequency band</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand"><code class="docutils literal notranslate"><span class="pre">FrequencyBand</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.ALPHA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.ALPHA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.BETA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.BETA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.DELTA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.DELTA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.FAST_RIPPLE"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.FAST_RIPPLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.GAMMA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.GAMMA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.HIGH_GAMMA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.HIGH_GAMMA</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.RIPPLE"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.RIPPLE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="frequency_band.html#pyseizure.data_classes.frequency_band.FrequencyBand.THETA"><code class="docutils literal notranslate"><span class="pre">FrequencyBand.THETA</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="montage.html">Montage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage"><code class="docutils literal notranslate"><span class="pre">Montage</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.AVERAGE_REFERENCE"><code class="docutils literal notranslate"><span class="pre">Montage.AVERAGE_REFERENCE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.AVERAGE_REFERENCE_A"><code class="docutils literal notranslate"><span class="pre">Montage.AVERAGE_REFERENCE_A</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.BIPOLAR"><code class="docutils literal notranslate"><span class="pre">Montage.BIPOLAR</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.LINKED_EARS"><code class="docutils literal notranslate"><span class="pre">Montage.LINKED_EARS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.OTHER"><code class="docutils literal notranslate"><span class="pre">Montage.OTHER</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="montage.html#pyseizure.data_classes.montage.Montage.RODENT"><code class="docutils literal notranslate"><span class="pre">Montage.RODENT</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objective.html">Objective</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="objective.html#pyseizure.data_classes.objective.Objective"><code class="docutils literal notranslate"><span class="pre">Objective</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="objective.html#pyseizure.data_classes.objective.Objective.FPFN"><code class="docutils literal notranslate"><span class="pre">Objective.FPFN</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="objective.html#pyseizure.data_classes.objective.Objective.SSF"><code class="docutils literal notranslate"><span class="pre">Objective.SSF</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="raw_sample.html">Raw sample</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample"><code class="docutils literal notranslate"><span class="pre">RawSample</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample.annotations"><code class="docutils literal notranslate"><span class="pre">RawSample.annotations</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample.channels"><code class="docutils literal notranslate"><span class="pre">RawSample.channels</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample.frequency"><code class="docutils literal notranslate"><span class="pre">RawSample.frequency</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample.montages"><code class="docutils literal notranslate"><span class="pre">RawSample.montages</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="raw_sample.html#pyseizure.data_classes.raw_sample.RawSample.signal"><code class="docutils literal notranslate"><span class="pre">RawSample.signal</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="resampling.html">Resampling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resampling.html#pyseizure.data_classes.resampling.Resampling"><code class="docutils literal notranslate"><span class="pre">Resampling</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="resampling.html#pyseizure.data_classes.resampling.Resampling.DECIMATE"><code class="docutils literal notranslate"><span class="pre">Resampling.DECIMATE</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="resampling.html#pyseizure.data_classes.resampling.Resampling.RESAMPY"><code class="docutils literal notranslate"><span class="pre">Resampling.RESAMPY</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../classifier/conv_transformer.html" class="btn btn-neutral float-left" title="Hybrid Model of Convolutional Neural Network and Transformer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classifier.html" class="btn btn-neutral float-right" title="Classifier" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Bartlomiej Chybowski.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

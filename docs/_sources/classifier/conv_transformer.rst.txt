@@ -1,0 +1,8 @@
+ConvTransformer
+=====================================
+Hybrid model of convolutional neural network and transformer classifier class.
+
+.. automodule:: pyseizure.classifier.conv_transformer
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,9 @@
+Iterator
+=====================================
+Iterator for XGBoost external memory class.
+
+.. automodule:: pyseizure.helpers.iterator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

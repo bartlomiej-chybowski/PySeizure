@@ -1,0 +1,9 @@
+FIR
+=====================================
+Finite impuls response filter class.
+
+.. automodule:: pyseizure.preprocessing.filters.filter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

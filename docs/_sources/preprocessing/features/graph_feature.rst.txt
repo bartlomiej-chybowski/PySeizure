@@ -1,0 +1,9 @@
+Graph feature
+=====================================
+Graph-theory-derived feature class.
+
+.. automodule:: pyseizure.preprocessing.feature_engineering.graph_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

@@ -1,0 +1,8 @@
+Classifier
+=====================================
+Classifier abstract class.
+
+.. automodule:: pyseizure.classifier.classifier
+   :members:
+   :undoc-members:
+   :show-inheritance:

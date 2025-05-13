@@ -1,0 +1,9 @@
+Feature Selector
+=====================================
+Feature selector enum class.
+
+.. automodule:: pyseizure.data_classes.feature_selector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

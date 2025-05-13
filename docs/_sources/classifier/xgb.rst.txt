@@ -1,0 +1,8 @@
+XGBoost
+=====================================
+XGBoost classifier class.
+
+.. automodule:: pyseizure.classifier.xgb
+   :members:
+   :undoc-members:
+   :show-inheritance:

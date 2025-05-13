@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classifier &mdash; PySeizure 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dataset" href="dataset.html" />
+    <link rel="prev" title="Data Classes" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PySeizure
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classifier/index.html">Classifiers</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Classes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Classifier</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier"><code class="docutils literal notranslate"><span class="pre">Classifier</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.CNN"><code class="docutils literal notranslate"><span class="pre">Classifier.CNN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.CONV_LSTM"><code class="docutils literal notranslate"><span class="pre">Classifier.CONV_LSTM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.CONV_TRANSFORMER"><code class="docutils literal notranslate"><span class="pre">Classifier.CONV_TRANSFORMER</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.EEGNET"><code class="docutils literal notranslate"><span class="pre">Classifier.EEGNET</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.LOGISTIC_REGRESSION"><code class="docutils literal notranslate"><span class="pre">Classifier.LOGISTIC_REGRESSION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.MLP"><code class="docutils literal notranslate"><span class="pre">Classifier.MLP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.classifier.Classifier.XGBOOST"><code class="docutils literal notranslate"><span class="pre">Classifier.XGBOOST</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature.html">FeatureFeature</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature_selector.html">Feature Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter_type.html">Filter Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frequency_band.html">Frequency band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="montage.html">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objective.html">Objective</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raw_sample.html">Raw sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resampling.html">Resampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preprocessing/index.html">Preprocessing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PySeizure</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Data Classes</a></li>
+      <li class="breadcrumb-item active">Classifier</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/data_classes/classifier.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="classifier">
+<h1>Classifier<a class="headerlink" href="#classifier" title="Link to this heading"></a></h1>
+<p>Classifier enum class.</p>
+<dl class="py class" id="module-pyseizure.data_classes.classifier">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyseizure.data_classes.classifier.</span></span><span class="sig-name descname"><span class="pre">Classifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.CNN">
+<span class="sig-name descname"><span class="pre">CNN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CNN'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.CNN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.CONV_LSTM">
+<span class="sig-name descname"><span class="pre">CONV_LSTM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ConvLSTM'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.CONV_LSTM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.CONV_TRANSFORMER">
+<span class="sig-name descname"><span class="pre">CONV_TRANSFORMER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ConvTransformer'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.CONV_TRANSFORMER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.EEGNET">
+<span class="sig-name descname"><span class="pre">EEGNET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'EEGNet'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.EEGNET" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.LOGISTIC_REGRESSION">
+<span class="sig-name descname"><span class="pre">LOGISTIC_REGRESSION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'LR'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.LOGISTIC_REGRESSION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.MLP">
+<span class="sig-name descname"><span class="pre">MLP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'MLP'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.MLP" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.classifier.Classifier.XGBOOST">
+<span class="sig-name descname"><span class="pre">XGBOOST</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'XGB'</span></em><a class="headerlink" href="#pyseizure.data_classes.classifier.Classifier.XGBOOST" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Data Classes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dataset.html" class="btn btn-neutral float-right" title="Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Bartlomiej Chybowski.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

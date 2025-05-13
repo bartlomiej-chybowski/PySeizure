@@ -1,0 +1,9 @@
+Temporal feature
+=====================================
+Temporal feature class.
+
+.. automodule:: pyseizure.preprocessing.feature_engineering.temporal_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

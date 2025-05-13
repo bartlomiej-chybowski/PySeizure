@@ -1,0 +1,9 @@
+CHBMIT
+=====================================
+A class with methods to build samples from CHB-MIT dataset.
+
+.. automodule:: pyseizure.helpers.chbmit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

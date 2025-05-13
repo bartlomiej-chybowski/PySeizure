@@ -1,0 +1,9 @@
+Generic
+=====================================
+Abstract class for dataset iterators.
+
+.. automodule:: pyseizure.helpers.generic
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

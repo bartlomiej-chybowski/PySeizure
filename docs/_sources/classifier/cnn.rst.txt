@@ -1,0 +1,8 @@
+CNN
+=====================================
+Convolutional neural network classifier class.
+
+.. automodule:: pyseizure.classifier.cnn
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,8 @@
+ConvLSTM
+=====================================
+Hybrid model of convolutional neural network and long-short term memory classifier class.
+
+.. automodule:: pyseizure.classifier.conv_lstm
+   :members:
+   :undoc-members:
+   :show-inheritance:

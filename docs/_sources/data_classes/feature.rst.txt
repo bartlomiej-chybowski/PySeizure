@@ -1,0 +1,8 @@
+FeatureFeature
+=====================================
+Feature enum class.
+
+.. automodule:: pyseizure.data_classes.feature
+   :members:
+   :undoc-members:
+   :show-inheritance:

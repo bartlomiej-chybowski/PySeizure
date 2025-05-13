@@ -1,0 +1,9 @@
+Boruta
+=====================================
+Boruta feature selector class.
+
+.. automodule:: pyseizure.preprocessing.feature_selection.boruta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

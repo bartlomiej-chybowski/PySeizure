@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classifiers &mdash; PySeizure 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Classifier" href="classifier.html" />
+    <link rel="prev" title="Welcome to PySeizure’s documentation!" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PySeizure
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classifiers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classifier.html">Classifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lr.html">LR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xgb.html">XGBoost</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mlp.html">MLP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cnn.html">CNN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eegnet.html">EEGNet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conv_lstm.html">ConvLSTM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html">ConvTransformer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/index.html">Data Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preprocessing/index.html">Preprocessing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PySeizure</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Classifiers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/classifier/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="classifiers">
+<h1>Classifiers<a class="headerlink" href="#classifiers" title="Link to this heading"></a></h1>
+<p>Classifier classes.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classifier.html">Classifier</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier"><code class="docutils literal notranslate"><span class="pre">Classifier</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier.evaluate"><code class="docutils literal notranslate"><span class="pre">Classifier.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier.load_model"><code class="docutils literal notranslate"><span class="pre">Classifier.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier.predict"><code class="docutils literal notranslate"><span class="pre">Classifier.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier.train"><code class="docutils literal notranslate"><span class="pre">Classifier.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classifier.html#pyseizure.classifier.classifier.Classifier.tune"><code class="docutils literal notranslate"><span class="pre">Classifier.tune()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lr.html">LR</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR"><code class="docutils literal notranslate"><span class="pre">LR</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.cross_validate"><code class="docutils literal notranslate"><span class="pre">LR.cross_validate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.evaluate"><code class="docutils literal notranslate"><span class="pre">LR.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.load_model"><code class="docutils literal notranslate"><span class="pre">LR.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.predict"><code class="docutils literal notranslate"><span class="pre">LR.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.predict_eval"><code class="docutils literal notranslate"><span class="pre">LR.predict_eval()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.train"><code class="docutils literal notranslate"><span class="pre">LR.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LR.tune"><code class="docutils literal notranslate"><span class="pre">LR.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LRModel"><code class="docutils literal notranslate"><span class="pre">LRModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lr.html#pyseizure.classifier.lr.LRModel.forward"><code class="docutils literal notranslate"><span class="pre">LRModel.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xgb.html">XGBoost</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB"><code class="docutils literal notranslate"><span class="pre">XGB</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.cross_validate"><code class="docutils literal notranslate"><span class="pre">XGB.cross_validate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.evaluate"><code class="docutils literal notranslate"><span class="pre">XGB.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.load_model"><code class="docutils literal notranslate"><span class="pre">XGB.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.predict"><code class="docutils literal notranslate"><span class="pre">XGB.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.train"><code class="docutils literal notranslate"><span class="pre">XGB.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="xgb.html#pyseizure.classifier.xgb.XGB.tune"><code class="docutils literal notranslate"><span class="pre">XGB.tune()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mlp.html">MLP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP"><code class="docutils literal notranslate"><span class="pre">MLP</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.cross_validate"><code class="docutils literal notranslate"><span class="pre">MLP.cross_validate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.evaluate"><code class="docutils literal notranslate"><span class="pre">MLP.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.load_model"><code class="docutils literal notranslate"><span class="pre">MLP.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.predict"><code class="docutils literal notranslate"><span class="pre">MLP.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.predict_eval"><code class="docutils literal notranslate"><span class="pre">MLP.predict_eval()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.train"><code class="docutils literal notranslate"><span class="pre">MLP.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLP.tune"><code class="docutils literal notranslate"><span class="pre">MLP.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLPModel"><code class="docutils literal notranslate"><span class="pre">MLPModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mlp.html#pyseizure.classifier.mlp.MLPModel.forward"><code class="docutils literal notranslate"><span class="pre">MLPModel.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cnn.html">CNN</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN"><code class="docutils literal notranslate"><span class="pre">CNN</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.evaluate"><code class="docutils literal notranslate"><span class="pre">CNN.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.load_model"><code class="docutils literal notranslate"><span class="pre">CNN.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.plot_single_epoch"><code class="docutils literal notranslate"><span class="pre">CNN.plot_single_epoch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.predict"><code class="docutils literal notranslate"><span class="pre">CNN.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.train"><code class="docutils literal notranslate"><span class="pre">CNN.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNN.tune"><code class="docutils literal notranslate"><span class="pre">CNN.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNNModel"><code class="docutils literal notranslate"><span class="pre">CNNModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cnn.html#pyseizure.classifier.cnn.CNNModel.forward"><code class="docutils literal notranslate"><span class="pre">CNNModel.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="eegnet.html">EEGNet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet"><code class="docutils literal notranslate"><span class="pre">EEGNet</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.evaluate"><code class="docutils literal notranslate"><span class="pre">EEGNet.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.load_model"><code class="docutils literal notranslate"><span class="pre">EEGNet.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.plot_single_epoch"><code class="docutils literal notranslate"><span class="pre">EEGNet.plot_single_epoch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.predict"><code class="docutils literal notranslate"><span class="pre">EEGNet.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.train"><code class="docutils literal notranslate"><span class="pre">EEGNet.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNet.tune"><code class="docutils literal notranslate"><span class="pre">EEGNet.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNetModel"><code class="docutils literal notranslate"><span class="pre">EEGNetModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="eegnet.html#pyseizure.classifier.eegnet.EEGNetModel.forward"><code class="docutils literal notranslate"><span class="pre">EEGNetModel.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conv_lstm.html">ConvLSTM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM"><code class="docutils literal notranslate"><span class="pre">ConvLSTM</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.evaluate"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.load_model"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.plot_single_epoch"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.plot_single_epoch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.predict"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.train"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTM.tune"><code class="docutils literal notranslate"><span class="pre">ConvLSTM.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTMModel"><code class="docutils literal notranslate"><span class="pre">ConvLSTMModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTMModel.forward"><code class="docutils literal notranslate"><span class="pre">ConvLSTMModel.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_lstm.html#pyseizure.classifier.conv_lstm.ConvLSTMModel.init_hidden"><code class="docutils literal notranslate"><span class="pre">ConvLSTMModel.init_hidden()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conv_transformer.html">ConvTransformer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ClassificationHead"><code class="docutils literal notranslate"><span class="pre">ClassificationHead</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ClassificationHead.forward"><code class="docutils literal notranslate"><span class="pre">ClassificationHead.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer"><code class="docutils literal notranslate"><span class="pre">ConvTransformer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.evaluate"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.evaluate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.load_model"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.load_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.plot_single_epoch"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.plot_single_epoch()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.predict"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.predict()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.train"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.train()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformer.tune"><code class="docutils literal notranslate"><span class="pre">ConvTransformer.tune()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformerModel"><code class="docutils literal notranslate"><span class="pre">ConvTransformerModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ConvTransformerModel.forward"><code class="docutils literal notranslate"><span class="pre">ConvTransformerModel.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.Encoder"><code class="docutils literal notranslate"><span class="pre">Encoder</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.Encoder.forward"><code class="docutils literal notranslate"><span class="pre">Encoder.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.EncoderLayer"><code class="docutils literal notranslate"><span class="pre">EncoderLayer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.EncoderLayer.forward"><code class="docutils literal notranslate"><span class="pre">EncoderLayer.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.FeedForward"><code class="docutils literal notranslate"><span class="pre">FeedForward</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.FeedForward.forward"><code class="docutils literal notranslate"><span class="pre">FeedForward.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.LayerNorm"><code class="docutils literal notranslate"><span class="pre">LayerNorm</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.LayerNorm.forward"><code class="docutils literal notranslate"><span class="pre">LayerNorm.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.MultiHeadAttention"><code class="docutils literal notranslate"><span class="pre">MultiHeadAttention</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.MultiHeadAttention.forward"><code class="docutils literal notranslate"><span class="pre">MultiHeadAttention.forward()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.MultiHeadAttention.split"><code class="docutils literal notranslate"><span class="pre">MultiHeadAttention.split()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.PositionalEncoding"><code class="docutils literal notranslate"><span class="pre">PositionalEncoding</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.PositionalEncoding.forward"><code class="docutils literal notranslate"><span class="pre">PositionalEncoding.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ScaleDotProductAttention"><code class="docutils literal notranslate"><span class="pre">ScaleDotProductAttention</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conv_transformer.html#pyseizure.classifier.conv_transformer.ScaleDotProductAttention.forward"><code class="docutils literal notranslate"><span class="pre">ScaleDotProductAttention.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to PySeizure’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classifier.html" class="btn btn-neutral float-right" title="Classifier" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Bartlomiej Chybowski.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

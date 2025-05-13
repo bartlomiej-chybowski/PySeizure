@@ -1,0 +1,9 @@
+FS Config
+=====================================
+Feature elimination based on selected features in configuration class.
+
+.. automodule:: pyseizure.preprocessing.feature_selection.fs_config
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

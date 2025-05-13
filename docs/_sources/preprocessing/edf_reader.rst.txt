@@ -1,0 +1,9 @@
+EDF reader
+=====================================
+EDF reader class.
+
+.. automodule:: pyseizure.preprocessing.edf_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

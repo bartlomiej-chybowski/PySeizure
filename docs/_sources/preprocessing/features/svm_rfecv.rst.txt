@@ -1,0 +1,9 @@
+SVM RFECV
+=====================================
+Support vector machine recursive feature elimination with cross-validation class.
+
+.. automodule:: pyseizure.preprocessing.feature_selection.svm_rfecv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

@@ -1,0 +1,9 @@
+Normaliser
+=====================================
+Normaliser functions working with dataset iterators.
+
+.. automodule:: pyseizure.helpers.normaliser
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

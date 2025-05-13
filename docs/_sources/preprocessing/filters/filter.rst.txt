@@ -1,0 +1,9 @@
+Filter
+=====================================
+Abstract class for filters.
+
+.. automodule:: pyseizure.preprocessing.filters.filter
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

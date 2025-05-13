@@ -1,0 +1,9 @@
+Raw sample
+=====================================
+Raw sample enum class.
+
+.. automodule:: pyseizure.data_classes.raw_sample
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

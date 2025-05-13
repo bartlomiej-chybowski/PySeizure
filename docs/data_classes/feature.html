@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FeatureFeature &mdash; PySeizure 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Feature Selector" href="feature_selector.html" />
+    <link rel="prev" title="Dataset" href="dataset.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            PySeizure
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../classifier/index.html">Classifiers</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Classes</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="classifier.html">Classifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">Dataset</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">FeatureFeature</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature"><code class="docutils literal notranslate"><span class="pre">Feature</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.ABSOLUTE_AREA_UNDER_SIGNAL"><code class="docutils literal notranslate"><span class="pre">Feature.ABSOLUTE_AREA_UNDER_SIGNAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.BETWEENNESS_CENTRALITY"><code class="docutils literal notranslate"><span class="pre">Feature.BETWEENNESS_CENTRALITY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.CHARACTERISTIC_PATH"><code class="docutils literal notranslate"><span class="pre">Feature.CHARACTERISTIC_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.CLUSTERING_COEFFICIENT"><code class="docutils literal notranslate"><span class="pre">Feature.CLUSTERING_COEFFICIENT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.COASTLINE"><code class="docutils literal notranslate"><span class="pre">Feature.COASTLINE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.COHERENCE"><code class="docutils literal notranslate"><span class="pre">Feature.COHERENCE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.CROSS_CORRELATION_MAX_COEF"><code class="docutils literal notranslate"><span class="pre">Feature.CROSS_CORRELATION_MAX_COEF</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.DIAMETER"><code class="docutils literal notranslate"><span class="pre">Feature.DIAMETER</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.DISCRETE_WAVELET_TRANSFORM"><code class="docutils literal notranslate"><span class="pre">Feature.DISCRETE_WAVELET_TRANSFORM</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.ECCENTRICITY"><code class="docutils literal notranslate"><span class="pre">Feature.ECCENTRICITY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.ENERGY_PERCENTAGE"><code class="docutils literal notranslate"><span class="pre">Feature.ENERGY_PERCENTAGE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.GLOBAL_EFFICIENCY"><code class="docutils literal notranslate"><span class="pre">Feature.GLOBAL_EFFICIENCY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.HJORTH_COMPLEXITY"><code class="docutils literal notranslate"><span class="pre">Feature.HJORTH_COMPLEXITY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.HJORTH_MOBILITY"><code class="docutils literal notranslate"><span class="pre">Feature.HJORTH_MOBILITY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.IMAGINARY_COHERENCE"><code class="docutils literal notranslate"><span class="pre">Feature.IMAGINARY_COHERENCE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.INTERMITTENCY"><code class="docutils literal notranslate"><span class="pre">Feature.INTERMITTENCY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.INTERQUARTILE_RANGE"><code class="docutils literal notranslate"><span class="pre">Feature.INTERQUARTILE_RANGE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.KURTOSIS"><code class="docutils literal notranslate"><span class="pre">Feature.KURTOSIS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.LOCAL_EFFICIENCY"><code class="docutils literal notranslate"><span class="pre">Feature.LOCAL_EFFICIENCY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.MAX"><code class="docutils literal notranslate"><span class="pre">Feature.MAX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.MEAN"><code class="docutils literal notranslate"><span class="pre">Feature.MEAN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.MIN"><code class="docutils literal notranslate"><span class="pre">Feature.MIN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.PEAK_TO_PEAK"><code class="docutils literal notranslate"><span class="pre">Feature.PEAK_TO_PEAK</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.PETROSIAN_FRACTAL_DIMENSION"><code class="docutils literal notranslate"><span class="pre">Feature.PETROSIAN_FRACTAL_DIMENSION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.PHASE_SLOPE_INDEX"><code class="docutils literal notranslate"><span class="pre">Feature.PHASE_SLOPE_INDEX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_CENTROID"><code class="docutils literal notranslate"><span class="pre">Feature.POWER_SPECTRAL_CENTROID</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_DENSITY"><code class="docutils literal notranslate"><span class="pre">Feature.POWER_SPECTRAL_DENSITY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.RADIUS"><code class="docutils literal notranslate"><span class="pre">Feature.RADIUS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.SIGNAL_MONOTONY"><code class="docutils literal notranslate"><span class="pre">Feature.SIGNAL_MONOTONY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.SIGNAL_TO_NOISE"><code class="docutils literal notranslate"><span class="pre">Feature.SIGNAL_TO_NOISE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.SKEWNESS"><code class="docutils literal notranslate"><span class="pre">Feature.SKEWNESS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.SPIKE_COUNT"><code class="docutils literal notranslate"><span class="pre">Feature.SPIKE_COUNT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.SPIKINESS"><code class="docutils literal notranslate"><span class="pre">Feature.SPIKINESS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.STANDARD_DEVIATION"><code class="docutils literal notranslate"><span class="pre">Feature.STANDARD_DEVIATION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.TOTAL_SIGNAL_ENERGY"><code class="docutils literal notranslate"><span class="pre">Feature.TOTAL_SIGNAL_ENERGY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.VARIANCE"><code class="docutils literal notranslate"><span class="pre">Feature.VARIANCE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.VOLTAGE_AUC"><code class="docutils literal notranslate"><span class="pre">Feature.VOLTAGE_AUC</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pyseizure.data_classes.feature.Feature.ZERO_CROSSING"><code class="docutils literal notranslate"><span class="pre">Feature.ZERO_CROSSING</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="feature_selector.html">Feature Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter_type.html">Filter Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="frequency_band.html">Frequency band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="montage.html">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objective.html">Objective</a></li>
+<li class="toctree-l2"><a class="reference internal" href="raw_sample.html">Raw sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resampling.html">Resampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../helpers/index.html">Helper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preprocessing/index.html">Preprocessing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">PySeizure</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Data Classes</a></li>
+      <li class="breadcrumb-item active">FeatureFeature</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/data_classes/feature.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="featurefeature">
+<h1>FeatureFeature<a class="headerlink" href="#featurefeature" title="Link to this heading"></a></h1>
+<p>Feature enum class.</p>
+<dl class="py class" id="module-pyseizure.data_classes.feature">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyseizure.data_classes.feature.</span></span><span class="sig-name descname"><span class="pre">Feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyseizure.data_classes.feature.Feature" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.ABSOLUTE_AREA_UNDER_SIGNAL">
+<span class="sig-name descname"><span class="pre">ABSOLUTE_AREA_UNDER_SIGNAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'absolute_area_under_signal'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.ABSOLUTE_AREA_UNDER_SIGNAL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.BETWEENNESS_CENTRALITY">
+<span class="sig-name descname"><span class="pre">BETWEENNESS_CENTRALITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'betweenness_centrality'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.BETWEENNESS_CENTRALITY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.CHARACTERISTIC_PATH">
+<span class="sig-name descname"><span class="pre">CHARACTERISTIC_PATH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'characteristic_path'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.CHARACTERISTIC_PATH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.CLUSTERING_COEFFICIENT">
+<span class="sig-name descname"><span class="pre">CLUSTERING_COEFFICIENT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'clustering_coefficient'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.CLUSTERING_COEFFICIENT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.COASTLINE">
+<span class="sig-name descname"><span class="pre">COASTLINE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'coastline'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.COASTLINE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.COHERENCE">
+<span class="sig-name descname"><span class="pre">COHERENCE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'coherence'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.COHERENCE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.CROSS_CORRELATION_MAX_COEF">
+<span class="sig-name descname"><span class="pre">CROSS_CORRELATION_MAX_COEF</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'cross_correlation_max_coef'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.CROSS_CORRELATION_MAX_COEF" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.DIAMETER">
+<span class="sig-name descname"><span class="pre">DIAMETER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'diameter'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.DIAMETER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.DISCRETE_WAVELET_TRANSFORM">
+<span class="sig-name descname"><span class="pre">DISCRETE_WAVELET_TRANSFORM</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'discrete_wavelet_transform'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.DISCRETE_WAVELET_TRANSFORM" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.ECCENTRICITY">
+<span class="sig-name descname"><span class="pre">ECCENTRICITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'eccentricity'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.ECCENTRICITY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.ENERGY_PERCENTAGE">
+<span class="sig-name descname"><span class="pre">ENERGY_PERCENTAGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'energy_percentage'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.ENERGY_PERCENTAGE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.GLOBAL_EFFICIENCY">
+<span class="sig-name descname"><span class="pre">GLOBAL_EFFICIENCY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'global_efficiency'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.GLOBAL_EFFICIENCY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.HJORTH_COMPLEXITY">
+<span class="sig-name descname"><span class="pre">HJORTH_COMPLEXITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'hjorth_complexity'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.HJORTH_COMPLEXITY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.HJORTH_MOBILITY">
+<span class="sig-name descname"><span class="pre">HJORTH_MOBILITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'hjorth_mobility'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.HJORTH_MOBILITY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.IMAGINARY_COHERENCE">
+<span class="sig-name descname"><span class="pre">IMAGINARY_COHERENCE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'imaginary_coherence'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.IMAGINARY_COHERENCE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.INTERMITTENCY">
+<span class="sig-name descname"><span class="pre">INTERMITTENCY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'intermittency'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.INTERMITTENCY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.INTERQUARTILE_RANGE">
+<span class="sig-name descname"><span class="pre">INTERQUARTILE_RANGE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'interquartile_range'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.INTERQUARTILE_RANGE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.KURTOSIS">
+<span class="sig-name descname"><span class="pre">KURTOSIS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'kurtosis'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.KURTOSIS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.LOCAL_EFFICIENCY">
+<span class="sig-name descname"><span class="pre">LOCAL_EFFICIENCY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'local_efficiency'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.LOCAL_EFFICIENCY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.MAX">
+<span class="sig-name descname"><span class="pre">MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'max'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.MAX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.MEAN">
+<span class="sig-name descname"><span class="pre">MEAN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'mean'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.MEAN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.MIN">
+<span class="sig-name descname"><span class="pre">MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'min'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.MIN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.PEAK_TO_PEAK">
+<span class="sig-name descname"><span class="pre">PEAK_TO_PEAK</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'peak_to_peak'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.PEAK_TO_PEAK" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.PETROSIAN_FRACTAL_DIMENSION">
+<span class="sig-name descname"><span class="pre">PETROSIAN_FRACTAL_DIMENSION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'petrosian_fractal_dimension'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.PETROSIAN_FRACTAL_DIMENSION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.PHASE_SLOPE_INDEX">
+<span class="sig-name descname"><span class="pre">PHASE_SLOPE_INDEX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'phase_slope_index'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.PHASE_SLOPE_INDEX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_CENTROID">
+<span class="sig-name descname"><span class="pre">POWER_SPECTRAL_CENTROID</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'power_spectral_centroid'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_CENTROID" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_DENSITY">
+<span class="sig-name descname"><span class="pre">POWER_SPECTRAL_DENSITY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'power_spectral_density'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.POWER_SPECTRAL_DENSITY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.RADIUS">
+<span class="sig-name descname"><span class="pre">RADIUS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'radius'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.RADIUS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.SIGNAL_MONOTONY">
+<span class="sig-name descname"><span class="pre">SIGNAL_MONOTONY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'signal_monotony'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.SIGNAL_MONOTONY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.SIGNAL_TO_NOISE">
+<span class="sig-name descname"><span class="pre">SIGNAL_TO_NOISE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'signal_to_noise'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.SIGNAL_TO_NOISE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.SKEWNESS">
+<span class="sig-name descname"><span class="pre">SKEWNESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'skewness'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.SKEWNESS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.SPIKE_COUNT">
+<span class="sig-name descname"><span class="pre">SPIKE_COUNT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'spike_count'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.SPIKE_COUNT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.SPIKINESS">
+<span class="sig-name descname"><span class="pre">SPIKINESS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'spikiness'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.SPIKINESS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.STANDARD_DEVIATION">
+<span class="sig-name descname"><span class="pre">STANDARD_DEVIATION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'standard_deviation'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.STANDARD_DEVIATION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.TOTAL_SIGNAL_ENERGY">
+<span class="sig-name descname"><span class="pre">TOTAL_SIGNAL_ENERGY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'total_signal_energy'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.TOTAL_SIGNAL_ENERGY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.VARIANCE">
+<span class="sig-name descname"><span class="pre">VARIANCE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'variance'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.VARIANCE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.VOLTAGE_AUC">
+<span class="sig-name descname"><span class="pre">VOLTAGE_AUC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'voltage_auc'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.VOLTAGE_AUC" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyseizure.data_classes.feature.Feature.ZERO_CROSSING">
+<span class="sig-name descname"><span class="pre">ZERO_CROSSING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'zero_crossing'</span></em><a class="headerlink" href="#pyseizure.data_classes.feature.Feature.ZERO_CROSSING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dataset.html" class="btn btn-neutral float-left" title="Dataset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="feature_selector.html" class="btn btn-neutral float-right" title="Feature Selector" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Bartlomiej Chybowski.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

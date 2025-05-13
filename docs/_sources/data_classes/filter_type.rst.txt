@@ -1,0 +1,9 @@
+Filter Type
+=====================================
+Filter type enum class.
+
+.. automodule:: pyseizure.data_classes.filter_type
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

@@ -1,0 +1,9 @@
+Dataset
+=====================================
+Dataset enum class.
+
+.. automodule:: pyseizure.data_classes.dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

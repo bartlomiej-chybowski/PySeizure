@@ -1,0 +1,9 @@
+Frequency band
+=====================================
+Frequency band enum class.
+
+.. automodule:: pyseizure.data_classes.frequency_band
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

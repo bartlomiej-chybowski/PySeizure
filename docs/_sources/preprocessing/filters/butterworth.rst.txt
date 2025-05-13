@@ -1,0 +1,9 @@
+Butterworth
+=====================================
+Butterworth class.
+
+.. automodule:: pyseizure.preprocessing.filters.butterworth
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

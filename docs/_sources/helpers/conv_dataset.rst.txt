@@ -1,0 +1,9 @@
+Conv Dataset
+=====================================
+Dataset iterator for PyTorch models using raw data.
+
+.. automodule:: pyseizure.helpers.conv_dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

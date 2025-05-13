@@ -1,0 +1,9 @@
+Current Source Density
+=====================================
+Current source density class.
+
+.. automodule:: pyseizure.preprocessing.filters.current_source_density
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

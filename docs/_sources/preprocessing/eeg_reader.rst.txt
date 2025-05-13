@@ -1,0 +1,9 @@
+EEG reader
+=====================================
+EEG reader abstract class.
+
+.. automodule:: pyseizure.preprocessing.eeg_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

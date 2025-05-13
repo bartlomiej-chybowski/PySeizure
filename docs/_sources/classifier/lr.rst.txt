@@ -1,0 +1,8 @@
+LR
+=====================================
+Logistic regression classifier class.
+
+.. automodule:: pyseizure.classifier.lr
+   :members:
+   :undoc-members:
+   :show-inheritance:

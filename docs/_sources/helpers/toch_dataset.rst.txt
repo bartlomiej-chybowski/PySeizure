@@ -1,0 +1,9 @@
+Torch Dataset
+=====================================
+Dataset iterator for PyTorch models using calculated features.
+
+.. automodule:: pyseizure.helpers.torch_dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

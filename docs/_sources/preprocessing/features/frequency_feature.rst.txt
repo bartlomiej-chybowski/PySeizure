@@ -1,0 +1,9 @@
+Frequency feature
+=====================================
+Frequency feature class.
+
+.. automodule:: pyseizure.preprocessing.feature_engineering.frequency_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

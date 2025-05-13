@@ -1,0 +1,9 @@
+Correlation feature
+=====================================
+Correlation feature class.
+
+.. automodule:: pyseizure.preprocessing.feature_engineering.correlation_feature
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

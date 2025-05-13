@@ -1,0 +1,15 @@
+Classifiers
+=====================================
+Classifier classes.
+
+.. toctree::
+   :maxdepth: 4
+
+   classifier
+   lr
+   xgb
+   mlp
+   cnn
+   eegnet
+   conv_lstm
+   conv_transformer

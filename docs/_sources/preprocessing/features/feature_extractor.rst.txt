@@ -1,0 +1,9 @@
+Feature extractor
+=====================================
+Feature extractor class.
+
+.. automodule:: pyseizure.preprocessing.feature_engineering.feature_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

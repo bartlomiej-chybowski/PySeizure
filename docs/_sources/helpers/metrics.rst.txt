@@ -1,0 +1,9 @@
+Metrics
+=====================================
+Helper functions for metrics and post-processing.
+
+.. automodule:: pyseizure.helpers.metrics
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

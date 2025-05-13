@@ -1,0 +1,9 @@
+Objective
+=====================================
+Objective enum class.
+
+.. automodule:: pyseizure.data_classes.objective
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

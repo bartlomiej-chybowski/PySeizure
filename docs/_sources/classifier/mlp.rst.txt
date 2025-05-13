@@ -1,0 +1,8 @@
+MLP
+=====================================
+Multilayer perceptron classifier class.
+
+.. automodule:: pyseizure.classifier.mlp
+   :members:
+   :undoc-members:
+   :show-inheritance:
