@@ -236,13 +236,12 @@ if __name__ == '__main__':
 
 ## Credits
 
-If you use this code in your project use the citation below:
+If you use this code in your project, use the citation below:
 
     @article{Chybowski_PySeizure_2025,
         title={PySeizure: A single machine learning classifier framework to detect seizures in diverse datasets},
-        author={Bartlomiej Chybowski},
+        author = {Chybowski, Bartlomiej and Abdullateef, Shima and Haule, Hollan and Gonzalez-Sulser, Alfredo and Escudero, Javier},
         year={2025},
-        doi={},
-        url={},
-        howpublished={\url{https://github.com/bartlomiej-chybowski/PySeizure}},
+        doi={10.48550/arXiv.2508.07253},
+        url={https://doi.org/10.48550/arXiv.2508.07253}
     }
